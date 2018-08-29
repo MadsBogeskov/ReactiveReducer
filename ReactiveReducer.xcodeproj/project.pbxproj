@@ -12,7 +12,27 @@
 		45B3C880212AE8CC00952D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B3C87E212AE8CC00952D94 /* Main.storyboard */; };
 		45B3C882212AE8CE00952D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B3C881212AE8CE00952D94 /* Assets.xcassets */; };
 		45B3C885212AE8CE00952D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B3C883212AE8CE00952D94 /* LaunchScreen.storyboard */; };
+		45B3C88D212AE9E000952D94 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B3C88C212AE9E000952D94 /* ReSwift.framework */; };
+		45B3C88F212AEC1200952D94 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B3C88E212AEC1200952D94 /* AppState.swift */; };
+		45B3C891212AEED800952D94 /* ReSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 45B3C88C212AE9E000952D94 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45BF7210213683C4003EBB1D /* MyActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF720F213683C4003EBB1D /* MyActions.swift */; };
+		45BF7212213683E0003EBB1D /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF7211213683E0003EBB1D /* Todo.swift */; };
+		45BF721421368E3A003EBB1D /* mainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF721321368E3A003EBB1D /* mainReducer.swift */; };
+		45BF721621368E4B003EBB1D /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BF721521368E4B003EBB1D /* Middleware.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		45B3C890212AEED300952D94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				45B3C891212AEED800952D94 /* ReSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45B3C877212AE8CC00952D94 /* ReactiveReducer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveReducer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +42,12 @@
 		45B3C881212AE8CE00952D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45B3C884212AE8CE00952D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B3C886212AE8CE00952D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B3C88C212AE9E000952D94 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = SOURCE_ROOT; };
+		45B3C88E212AEC1200952D94 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		45BF720F213683C4003EBB1D /* MyActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActions.swift; sourceTree = "<group>"; };
+		45BF7211213683E0003EBB1D /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		45BF721321368E3A003EBB1D /* mainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainReducer.swift; sourceTree = "<group>"; };
+		45BF721521368E4B003EBB1D /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B3C88D212AE9E000952D94 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +81,18 @@
 		45B3C879212AE8CC00952D94 /* ReactiveReducer */ = {
 			isa = PBXGroup;
 			children = (
+				45B3C88C212AE9E000952D94 /* ReSwift.framework */,
 				45B3C87A212AE8CC00952D94 /* AppDelegate.swift */,
 				45B3C87C212AE8CC00952D94 /* ViewController.swift */,
+				45B3C88E212AEC1200952D94 /* AppState.swift */,
 				45B3C87E212AE8CC00952D94 /* Main.storyboard */,
 				45B3C881212AE8CE00952D94 /* Assets.xcassets */,
 				45B3C883212AE8CE00952D94 /* LaunchScreen.storyboard */,
 				45B3C886212AE8CE00952D94 /* Info.plist */,
+				45BF720F213683C4003EBB1D /* MyActions.swift */,
+				45BF7211213683E0003EBB1D /* Todo.swift */,
+				45BF721321368E3A003EBB1D /* mainReducer.swift */,
+				45BF721521368E4B003EBB1D /* Middleware.swift */,
 			);
 			path = ReactiveReducer;
 			sourceTree = "<group>";
@@ -74,6 +107,7 @@
 				45B3C873212AE8CC00952D94 /* Sources */,
 				45B3C874212AE8CC00952D94 /* Frameworks */,
 				45B3C875212AE8CC00952D94 /* Resources */,
+				45B3C890212AEED300952D94 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -135,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B3C88F212AEC1200952D94 /* AppState.swift in Sources */,
+				45BF7210213683C4003EBB1D /* MyActions.swift in Sources */,
 				45B3C87D212AE8CC00952D94 /* ViewController.swift in Sources */,
 				45B3C87B212AE8CC00952D94 /* AppDelegate.swift in Sources */,
+				45BF7212213683E0003EBB1D /* Todo.swift in Sources */,
+				45BF721421368E3A003EBB1D /* mainReducer.swift in Sources */,
+				45BF721621368E4B003EBB1D /* Middleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +320,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveReducer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +341,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveReducer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
